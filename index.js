@@ -1,10 +1,11 @@
 const express = require('express')
 const app = express()
+require('dotenv').config()
 const cors = require('cors')
 // imports
 const products = require('./routes/products')
 
-const port = 8000
+const port = process.env.PORT || 8000
 
 app.use(cors({
   methods: 'GET',

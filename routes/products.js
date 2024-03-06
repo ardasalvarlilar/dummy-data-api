@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router()
-
 const products = [
   {id: 1,text:'ürün1',price:100},
   {id: 2,text:'ürün2',price:200},
