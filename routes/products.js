@@ -1,10 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const products = [
-  {id: 1,text:'ürün1',price:100},
-  {id: 2,text:'ürün2',price:200},
-  {id: 3,text:'ürün3',price:300},
-]
+const products = require('../data/products.json')
+
 router.get('/:id',(req,res,next) => {
   const {id} = req.params
   const product = products.find(product => product.id == id)
