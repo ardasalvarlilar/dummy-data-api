@@ -4,6 +4,7 @@ require('dotenv').config()
 const cors = require('cors')
 // imports
 const products = require('./routes/products')
+const countries = require('./routes/countries')
 const port = process.env.PORT || 8000
 
 app.use(cors({
@@ -14,6 +15,7 @@ app.use(express.json())
 
 
 app.use('/products',products)
+app.use('/countries',countries)
 
 app.listen(port,() => {
   console.log('server is running on port',port)
