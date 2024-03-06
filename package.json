@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "a restapi project to test frontend fetch requests and demo placeholder items",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "react",
+    "mern",
+    "stack",
+    "mongodb",
+    "restapi",
+    "fetch",
+    "axios"
+  ],
+  "author": "Arda Şalvarlılar",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
