@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const countries = require('../data/countries.json')
 
+// ülkeyi ismine göre bul eğer kullanısı isim yerine id girdiyse sonraki middleware'e gönder
 router.get('/:name',(req,res,next) => {
   const {name} = req.params
   try {
@@ -22,6 +23,7 @@ router.get('/:name',(req,res,next) => {
   }
 })
 
+// ülkeyi id'sine göre bul
 router.get('/:id',(req,res) => {
   const {id} = req.params
   try{
@@ -39,8 +41,6 @@ router.get('/:id',(req,res) => {
     console.log(error)
   }
 })
-
-
 
 // bütün datayı anasayfaya gönder
 router.get('/',(req,res) => {
